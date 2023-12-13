@@ -18,7 +18,7 @@
             <img src="img/logo.svg" alt="logo">
 
             <ul>
-                <li v-for="email in emails">{{email}}</li>
+                <li v-if="emails.length === 10" v-for="email in emails">{{email}}</li>
             </ul>
             
 
