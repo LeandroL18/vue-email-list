@@ -18,8 +18,8 @@
             <img src="img/logo.svg" alt="logo">
 
             <div class="lista">
-                <ol>
-                    <li v-if="emails.length === 10" v-for="email in emails">{{email}}</li>
+                <ol v-if="emails.length === 10">
+                    <li v-for="email in emails">{{email}}</li>
                 </ol>
             </div> 
 
